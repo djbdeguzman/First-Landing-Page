@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.navbar {
+    background-color: #5c5e61;
+    color: #fff;
+    height: 125px;
+    padding: 0px 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+}
+
+.header {
+    background-color: #3b3c3d;
+    color: #fff;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    gap: 20px;
+}
+
+.header-text {
+    flex: 2 1 0%;
+}
+
+.header img {
+    flex-shrink: 1;
+    min-width: 500px;
+}
+
+.boxes {
+    background-color: #5c5e61;
+    color: #fff;
+}
+.boxes .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 15px;
+    gap: 20px;
+    justify-content: center;
+    align-items:flex-start
+}
+
+.box {
+    background-color: #3b3c3d;
+    height: 400px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.testimonials .container {
+    text-align: center;
+    background-color: #3b3c3d;
+    color: #fff;
+    padding: 20px;
+}
+
+.testimonials a {
+    color: #fff;
+}
+.testimonials a:hover {
+    color: rgb(94, 94, 221);
+}
+
+.book-now .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: #5c5e61;
+    color: #fff;
+    padding: 30px;
+}
+
+.book-now button {
+    padding: 10px 20px;
+}
+
+.footer {
+    padding: 40px;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        font-size: 15px;
+    }
+    .header .container {
+        display: block;
+    }
+    .header-text {
+        margin-bottom: 15px;
+    }
+    .header img {
+        width: 600px;
+    }
+    .boxes .container {
+        display: block;
+    }
+    .box {
+        margin: auto;
+        margin-bottom: 10px;
+        width: auto;
+    }
+    .testimonials .container {
+        display: block;
+    }
+    .book-now .container {
+        display: block;
+    }
+    .book-now .c2a {
+        margin-bottom: 20px;
+    }
+    
+}
