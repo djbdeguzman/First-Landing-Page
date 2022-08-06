@@ -9,14 +9,44 @@ body {
     text-align: center;
 }
 
+h1{
+    font-family: 'Alex Brush', 'cursive';
+    font-size: 55px;
+    text-shadow: 5px 5px 8px rgba(77, 77, 77, 0.65);
+    color: #000;
+}
+h2, h3 {    
+    text-shadow: 3px 3px 8px rgba(77, 77, 77, 0.555);
+}
+
 ul {
     list-style-type: none;
-    font-size: 20px;
+    font-size: 14px;
+}
+
+p {
+    font-size: 14px;
+}
+
+li {
+
+    font-size: 12px;
+}
+
+section {
+    background-color: #f7edd0;
+}
+
+.border-design {
+    font-size: 14px;
+    font-size: 14px;
+    border: 10px solid;
+    border-radius: 10px;
+    border-color: #5c5e61;
+    box-shadow: 2px 2px 8px #000;
 }
 
 .navbar {
-    background-color: #5c5e61;
-    color: #fff;
     height: 140px;
     padding: 0px 25px;
 }
@@ -27,8 +57,13 @@ ul {
 
 .navbar a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     font-weight: bold;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    color: #ff9933;
 }
 
 .navbar .container {
@@ -44,8 +79,6 @@ ul {
 }
 
 .header {
-    background-color: #3b3c3d;
-    color: #fff;
 }
 
 .header .container {
@@ -57,59 +90,121 @@ ul {
 }
 
 .header-text {
-    flex: 2 1 0%;
+    flex: 2 0 25%;
+    color: #000;
 }
 
+.header img {
+    max-width: 600px;
+}
 
 .boxes {
-    background-color: #5c5e61;
-    color: #fff;
+    background-color: #dbd5b2;
+    color: #000;
+    padding: 5px 0px;
 }
 .boxes .container {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px 15px;
-    gap: 20px;
+    padding: 10px 10px;
+    gap: 15px;
     justify-content: center;
-    align-items:flex-start
+}
+.video-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+}
+
+.video-button-container {
+    display: block;
+    padding: 5px;
+}
+
+.play-now {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-now a {
+    color: #000;
+    text-decoration: none;
+}
+
+.play-now a:hover {
+    color: #ff9933;
 }
 
 .box {
-    background-color: #3b3c3d;
-    height: 400px;
-    max-width: 450px;
+    background-color: #f7edd0;
+    height: 450px;
+    width: 450px;
     border-radius: 10px;
     padding: 15px;
 }
 
 .box img {
-    max-width: 300px;
-    max-height: 200px;
+    width: 300px;
+    height: 200px;
 }
 
-.testimonials .container {
+.box ul {
+    list-style-type: disc;
+}
+.box .video-button {
+    background-color: #ff3333;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    align-self: center;
+}
+.video-button img {
+    width: 15px;
+    height: 15px;
+}
+
+.testimonials {
+    background-color: #f7edd0;
     text-align: center;
-    background-color: #3b3c3d;
-    color: #fff;
-    padding: 20px;
+    color: #000;
+    padding: 5px;
+}
+.testimonials .container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    gap: 20px;
+}
+
+.testimonials img {
+    width: 600px;
 }
 
 .testimonials a {
-    color: #fff;
+    font-weight: bold;
+    color: #000;
 }
 .testimonials a:hover {
-    color: rgb(94, 94, 221);
+    color: #ff9933;
 }
-
+.book-now {
+    background-color: #dbd5b2;
+    padding: 70px;
+}
 .book-now .container {
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    background-color: #5c5e61;
-    color: #fff;
+    background-color: #f7edd0;
+    color: #000;
     padding: 30px;
+    border-radius: 35px;
 }
 
 .book-now button {
@@ -118,7 +213,7 @@ ul {
 .book-now button {
     font-size: 20px;
     font-weight: bold;
-    background-color: #ff9933;
+    background-color: #dbd5b2;
     border-radius: 5px;
 }
 .book-now button a {
@@ -129,27 +224,30 @@ ul {
 .book-now button:hover {
     font-size: 20px;
     font-weight: bold;
-    background-color: #ff3333;
+    background-color: #ff9933;
     border-radius: 5px;
 }
 
 .footer {
-    padding: 40px;
+    background-color: #f7edd0;
+    padding: 15px;
 }
 
 @media (max-width: 820px) {
-    .navbar, .footer {
-        height: 90px;
+    .navbar {
+        height: 80px;
     }
-
+    .footer {
+        height: 40px;
+    }
     .footer{
         text-align: center;
-        font-size: 10px;
+        font-size: 12px;
     }
-
     .navbar .container{
         display: flex;
         gap: 10px;
+        padding: 15px 0px;
     }
     .logo img {
         width: 100px;
@@ -159,8 +257,7 @@ ul {
         display: flex;
         flex-wrap: wrap;
         justify-content:flex-end;
-        font-size: 15px;
-        font-size: 12px;
+        gap: 10px;
     }
     .header .container {
         display: block;
@@ -169,7 +266,7 @@ ul {
         margin-bottom: 15px;
     }
     .header img {
-        width: 300px;
+        width: 350px;
     }
     .boxes .container {
         display: block;
@@ -182,11 +279,16 @@ ul {
     .testimonials .container {
         display: block;
     }
+    .testimonials img {
+        width: 350px;
+        margin-top: 15px;
+    }
     .book-now .container {
         display: block;
     }
     .book-now .c2a {
         margin-bottom: 20px;
     }
+    
     
 }
